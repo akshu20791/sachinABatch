@@ -1,0 +1,38 @@
+launch aws linux
+1) sudo su
+
+2) sudo yum install docker -y
+
+3) service docker start
+
+4) docker images   #show all the images in docker registry
+
+5) docker pull python
+
+6) docker images
+
+7) docker pull python:alpine
+
+8) docker images
+
+9) docker run -it --name c01 ubuntu /bin/bash   #it will create a container with the name c01 and ubuuntu as base images
+
+10) ls
+
+11) exit   #to come out of the container u can write exiut
+
+12) docker run -it --name c02 ubuntu /bin/bash
+
+13) exit
+
+14) docker ps -a
+
+15) docker run -it --name c03 ubuntu /bin/bash
+
+16) touch file1 file2 file3   #create blank files named file1 file2 file3
+
+17) exit
+  
+18) docker start c03
+ #start the container
+19) docker attach c03    #to get inside the running container
